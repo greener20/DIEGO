@@ -1,0 +1,1094 @@
+/* =====================================================
+   DIEGO LUXE STUDIO
+   COMPLETE UPDATED CSS
+   ORIGINAL CHAMPAGNE, GOLD & PINK THEME
+===================================================== */
+
+
+/* =====================================================
+   1. ROOT VARIABLES
+===================================================== */
+
+:root {
+    --ink: #17120F;
+    --muted: #665E57;
+    --cream: #FFF9EC;
+    --rose: #BE9225;
+    --rose-dark: #947016;
+    --line: #E9DCC5;
+    --white: #FFFFFF;
+}
+
+
+/* =====================================================
+   2. GLOBAL STYLES
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   3. HEADER
+===================================================== */
+
+.site-header {
+    height: 86px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 18px rgba(30, 21, 10, 0.08);
+}
+
+
+/* =====================================================
+   4. BRAND
+===================================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.brand-mark {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--rose);
+    border-radius: 50%;
+
+    color: var(--rose-dark);
+
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+}
+
+.brand-name {
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    line-height: 1.1;
+    font-weight: 600;
+
+    color: #201A16;
+}
+
+.brand-name small {
+    display: block;
+    margin-top: 5px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+    color: var(--rose-dark);
+}
+
+
+/* =====================================================
+   5. NAVIGATION
+===================================================== */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.main-nav a:not(.nav-cta) {
+    color: #201A16;
+}
+
+.main-nav a:not(.nav-cta):hover {
+    color: var(--rose);
+}
+
+.nav-cta {
+    padding: 12px 18px;
+
+    background: #B99020;
+    color: #FFFFFF !important;
+
+    border-radius: 2px;
+
+    transition: background 0.3s ease;
+}
+
+.nav-cta:hover {
+    background: #967216;
+}
+
+.menu-toggle {
+    display: none;
+
+    border: 0;
+    background: none;
+
+    font-size: 25px;
+    cursor: pointer;
+
+    color: #B99020;
+}
+
+
+/* =====================================================
+   6. HERO SECTION
+   FIXED: FULL IMAGE WITHOUT CROPPING
+===================================================== */
+
+.hero { 
+  min-height: 400px; 
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  padding: 90px 11%; 
+  color: white; 
+  background-color: #0A0A0A; 
+  background-image: url("images/hero.jpeg"); 
+  background-size: auto; 
+  background-position: center; 
+}
+
+.hero-overlay { 
+  position: absolute; 
+  inset: 0; 
+  background: linear-gradient(
+    90deg, 
+    rgba(0,0,0,.78), 
+    rgba(0,0,0,.35) 62%, 
+    rgba(0,0,0,.08)
+  ); 
+}
+
+
+
+/* =====================================================
+   7. HERO OVERLAY
+===================================================== */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.35) 62%,
+        rgba(0, 0, 0, 0.08) 100%
+    );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   8. HERO CONTENT
+===================================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 610px;
+}
+
+.eyebrow {
+    color: var(--rose);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 18px;
+}
+
+.hero .eyebrow {
+    color: #E8CA6B;
+}
+
+
+/* Hero heading */
+
+h1 {
+    font-size: clamp(48px, 6vw, 79px);
+
+    line-height: 1.05;
+    letter-spacing: 1px;
+
+    margin-bottom: 24px;
+}
+
+h1 em {
+    color: #EDB7B4;
+    font-style: italic;
+}
+
+
+/* Hero paragraph */
+
+.hero-copy {
+    max-width: 510px;
+
+    color: #E8E8E8;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+/* Hero tagline */
+
+.hero-tagline {
+    margin: 24px 0 29px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    font-style: italic;
+}
+
+
+/* Hero caption */
+
+.hero-caption {
+    position: absolute;
+    z-index: 2;
+
+    right: 7%;
+    bottom: 35px;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    color: #E8CA6B;
+}
+
+
+/* =====================================================
+   9. BUTTONS
+===================================================== */
+
+.button {
+    min-height: 51px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+    padding: 0 23px;
+
+    border: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button span {
+    font-size: 17px;
+}
+
+.button-light {
+    color: #241C0B;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.button-light:hover {
+    background: #F4E6CB;
+}
+
+.button-dark {
+    color: #FFFFFF;
+    background: #B99020;
+
+    width: 100%;
+    margin-top: 10px;
+
+    border-radius: 5px;
+}
+
+.button-dark:hover {
+    background: #947016;
+}
+
+
+/* =====================================================
+   10. INTRO STRIP
+===================================================== */
+
+.intro-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 24px 15px;
+
+    background: #FAF4E7;
+    color: #9A771A;
+
+    border-bottom: 1px solid #F0E5D1;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro-strip i {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+    background: #B99020;
+}
+
+
+/* =====================================================
+   11. GENERAL SECTIONS
+===================================================== */
+
+.section {
+    padding: 110px 10%;
+}
+
+h2 {
+    font-size: clamp(36px, 4vw, 53px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+h2 em {
+    color: #B99020;
+    font-style: italic;
+}
+
+
+/* =====================================================
+   12. ABOUT SECTION
+===================================================== */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 9%;
+    align-items: center;
+
+    background: #FFFFFF;
+}
+
+.section-image {
+    min-height: 560px;
+    position: relative;
+
+    background: #1A1A1A;
+}
+
+.about-image {
+    background-image:
+        linear-gradient(
+            145deg,
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.22)
+        ),
+        url("images/about.jpeg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-note {
+    position: absolute;
+
+    bottom: 22px;
+    left: 22px;
+
+    padding: 13px 17px;
+
+    background: #B99020;
+    color: #FFFFFF;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-copy > p:not(.eyebrow) {
+    color: #60584F;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.signature {
+    padding-top: 8px;
+
+    color: var(--rose) !important;
+
+    font-family: "Playfair Display", serif;
+    font-size: 19px !important;
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   13. SERVICES SECTION
+===================================================== */
+
+.services-section {
+    background: #FFF9EC;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 54px;
+}
+
+.section-heading > p:last-child {
+    color: #6B6258;
+    font-size: 13px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    max-width: 1120px;
+    margin: auto;
+}
+
+.service-card {
+    position: relative;
+
+    min-height: 390px;
+    padding: 36px 31px;
+
+    background: #FFFFFF;
+    border: 1px solid #E8DAC1;
+
+    box-shadow: 0 4px 16px rgba(47, 31, 14, 0.035);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #C9A94B;
+}
+
+.featured-card {
+    background: #F8F0E6;
+    border-color: #C9A94B;
+}
+
+.service-number {
+    position: absolute;
+
+    top: 27px;
+    right: 28px;
+
+    color: #B99020;
+
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
+
+.service-icon {
+    color: #B99020;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.service-card h3 {
+    color: #302922;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card li {
+    color: #302922;
+    font-size: 12px;
+    padding: 7px 0;
+
+    border-bottom: 1px solid #E9DDC9;
+}
+
+.service-card li::before {
+    content: "—";
+    color: #B99020;
+    margin-right: 9px;
+}
+
+.service-disclaimer {
+    text-align: center;
+
+    color: #786E62;
+    font-size: 11px;
+
+    margin: 25px 0 0;
+}
+
+
+/* =====================================================
+   14. BEAUTY GALLERY
+===================================================== */
+
+.gallery-section {
+    background: #FFFFFF;
+}
+
+.beauty-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    max-width: 1250px;
+    margin: 42px auto 0;
+}
+
+.gallery-item {
+    margin: 0;
+    overflow: hidden;
+
+    border-radius: 8px;
+    border: 1px solid #E9DCC5;
+
+    aspect-ratio: 3 / 4;
+
+    background: #F5EFE8;
+
+    box-shadow: 0 12px 28px rgba(42, 28, 10, 0.08);
+}
+
+.gallery-item img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.45s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.055);
+}
+
+
+/* =====================================================
+   15. WHY CHOOSE US
+===================================================== */
+
+.why-section {
+    background: #FCF7F0;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 24px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.benefit-grid article {
+    border-top: 1px solid #BE9225;
+    padding-top: 19px;
+}
+
+.benefit-grid article > span {
+    color: var(--rose);
+
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
+
+.benefit-grid h3 {
+    margin: 18px 0 9px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.benefit-grid p {
+    color: #625A51;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   16. BOOKING SECTION
+===================================================== */
+
+.booking-section {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 10%;
+    align-items: center;
+
+    background: #F3E8E2;
+}
+
+.booking-copy > p:not(.eyebrow) {
+    max-width: 450px;
+    color: #645B55;
+    font-size: 14px;
+}
+
+.booking-small {
+    font-size: 11px !important;
+}
+
+
+/* =====================================================
+   17. BOOKING FORM
+===================================================== */
+
+.booking-form {
+    padding: 34px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    box-shadow: 0 14px 36px rgba(81, 53, 31, 0.09);
+}
+
+.booking-form label {
+    display: block;
+
+    margin: 13px 0 6px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.booking-form label span {
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+
+    border: 1px solid #DDCFC3;
+    background: #FFFFFF;
+
+    padding: 12px 13px;
+    color: #231C17;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+
+    border-radius: 12px;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: #8E847B;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: 1px solid var(--rose);
+    border-color: var(--rose);
+}
+
+.form-status {
+    color: #846618;
+    font-size: 12px;
+    margin: 12px 0 0;
+}
+
+
+/* =====================================================
+   18. FOOTER
+===================================================== */
+
+.site-footer {
+    padding: 55px 8% 20px;
+
+    text-align: center;
+
+    background: #201B1A;
+    color: #FFFFFF;
+}
+
+.footer-brand {
+    justify-content: center;
+}
+
+.footer-brand .brand-name {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.site-footer .brand-mark {
+    color: #D5B451;
+}
+
+.site-footer .brand-name small {
+    color: #D5B451;
+}
+
+.site-footer > p {
+    margin: 23px 0 35px;
+
+    color: #DED6CD;
+
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.footer-bottom {
+    border-top: 1px solid #50433C;
+    padding-top: 17px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #DED6CD;
+    font-size: 10px;
+}
+
+.footer-bottom a:hover {
+    color: var(--rose);
+}
+
+
+/* =====================================================
+   19. TABLET RESPONSIVENESS
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 0 5%;
+    }
+
+    .main-nav {
+        gap: 16px;
+    }
+
+    .section {
+        padding: 85px 7%;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-section {
+        gap: 6%;
+    }
+
+    .beauty-gallery {
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+
+/* =====================================================
+   20. MOBILE RESPONSIVENESS
+===================================================== */
+
+@media (max-width: 680px) {
+
+    /* HEADER */
+
+    .site-header {
+        height: 74px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 74px;
+        left: 0;
+        right: 0;
+
+        padding: 22px 7%;
+
+        background: #FFFFFF;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 17px;
+
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-nav.open {
+        display: flex;
+    }
+
+    .main-nav a:not(.nav-cta) {
+        color: #201A16;
+    }
+
+    .nav-cta {
+        text-align: center;
+    }
+
+
+    /* HERO - MOBILE FIX */
+
+    .hero {
+        width: 100%;
+        min-height: 550px;
+
+        padding: 65px 7%;
+
+        background-image: url("images/hero.jpeg");
+
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        background-color: #14110F;
+    }
+
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.62);
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 9vw, 65px);
+    }
+
+    .hero-copy {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-caption {
+        display: none;
+    }
+
+
+    /* INTRO STRIP */
+
+    .intro-strip {
+        gap: 10px;
+        flex-wrap: wrap;
+
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 72px 7%;
+    }
+
+
+    /* ABOUT AND BOOKING */
+
+    .about-section,
+    .booking-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section-image {
+        min-height: 380px;
+    }
+
+
+    /* SERVICES */
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+
+
+    /* GALLERY */
+
+    .beauty-gallery {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        gap: 22px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 4 / 5;
+    }
+
+
+    /* BENEFITS */
+
+    .benefit-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 18px;
+    }
+
+
+    /* BOOKING FORM */
+
+    .booking-form {
+        padding: 25px 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* =====================================================
+   21. SMALL MOBILE DEVICES
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        min-height: 520px;
+
+        padding: 55px 6%;
+
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-copy {
+        font-size: 13px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   22. ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .gallery-item img,
+    .service-card,
+    .button {
+        transition: none;
+    }
+}

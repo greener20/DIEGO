@@ -1,0 +1,1 @@
+Updated to the light cream, champagne, blush, white and gold color theme based on the provided example video. Three female gallery photos and existing site functionality are retained. Open index.html.
